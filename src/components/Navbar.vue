@@ -1,41 +1,10 @@
 <template>
 
-    <!-- <header class="fixed w-full z-10">
-
-      <div  class="bg-white shadow h-16 w-full flex justify-between items-stretch" >
-      <router-link
-        :to="{ name: 'home' }"
-        class="inline-flex items-center h-full px-5 text-orange-500 font-bold"
-      >
-        Home
-      </router-link>
-      <div class="flex items-center gap-1">
-        <router-link
-          :to="{ name: 'byName' }"
-          class="inline-flex items-center px-2 h-full transition-colors hover:bg-orange-500 hover:text-white"
-        >
-          Search Meals</router-link
-        >
-        <router-link
-          :to="{ name: 'byLetter' }"
-          class="inline-flex items-center px-2 h-full transition-colors hover:bg-orange-500 hover:text-white"
-        >
-          Meals By Letter
-        </router-link>
-        <router-link
-          :to="{ name: 'byIngredient' }"
-          class="inline-flex items-center px-2 h-full transition-colors hover:bg-orange-500 hover:text-white"
-        >
-          Meals By Ingredients</router-link
-        >
-      </div>
-    </div>
-    </header> -->
 
     <header class="fixed w-full z-10">
     <nav class="bg-white shadow border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
-    <router-link :to="{ name: 'home' }" class="text-red-600 h1">🔥 Home 🔥</router-link>
+    <router-link :to="{ name: 'home' }" class="text-red-600 h1 text-xl">🔥 Home 🔥</router-link>
         <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="w-6 h-6" aria-hidden="true" fill="red" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
@@ -52,7 +21,7 @@
             </li>
             <li>
             <router-link 
-            :to="{ name: 'byIngredient' }" class="block py-2 pl-3 pr-4 transition-colors hover:bg-orange-500 hover:text-white">Meals By Ingredients</router-link>
+            :to="{ name: 'ingredients' }" class="block py-2 pl-3 pr-4 transition-colors hover:bg-orange-500 hover:text-white">Meals By Ingredients</router-link>
             </li>
         </ul>
         </div>

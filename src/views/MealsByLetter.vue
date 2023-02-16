@@ -1,9 +1,9 @@
 <template>
-    <div class="p-8 pb-0">
+    <div class="p-8 ">
         <h1 class="text-4xl font-bold mb-4 text-orange-500">Meals by Letter</h1>
     </div>
 
-    <div class="flex flex-wrap justify-center gap-3 px-8 mb-6">
+    <div class="flex flex-wrap justify-center gap-3 px-8 mb-8">
       <!-- <RouterLink v-for="letter of letters"> {{ letter }} </RouterLink> -->
       <router-link
         :to="{ name: 'byLetter', params: { letter } }"
